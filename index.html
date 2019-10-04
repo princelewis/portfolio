@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="static/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <div class ="wrapper">
+        <section class="top_section ">
+            <header class="header">
+                <nav class = "top_menu inner-wrapper" id="collapse">
+                    <div class="logo "><a href="#">LoudsData</a></div>
+                    <div class="right_menu mr-0" id="collapsible_links">
+                        <a href="#about__me">About</a>
+                        <a href="#skills">Skills</a>
+                        <a href="#github__acct">Projects</a>
+                        <a href="#contact">Contact</a>
+                    </div>
+                    <a href="javascript:void(0);"  class="icon" onclick = "collapse()"><i class="fa fa-bars"><span class="span"> Menu</span></i></a>
+                </nav>
+                <div class="header__title"><h1>UGWU LEWIS</h1></div>
+                <div class="header__image"><img src="assets/20190828_193436.jpg" alt="Ugwu Lewis"></div>
+                <div class="image__descr text-center"><h2>I'm a <span>Software Developer</span></h2></div>
+            </header>
+        </section>
+        <section class="section__2">
+            <div class="container__2 inner-wrapper">
+                <div class="about__conatiner">
+                    <div class="about__me" id="about__me"><h3 class="text-center">About me</h3></div>
+                    <p class="text-center mt-35">I am a well dedicated software enginneer who is able to work as an individual or as part of a team. I have thorough hands-on-experience in all levels of interface designing and testing, including performance, functional, integration, system and user acceptance testing.</p>
+                    <br>
+                    <p class="text-center" id="github__acct">Want to know more about my projects? visit my Github account <a href="https://github.com/princelewis?tab=repositories" target = "_blank">here</a></p>
+                </div>
+
+            </div>
+        </section>
+        <section class="section__3" id="skills">
+            <div class="container__3 inner-wrapper">
+                <div class="container__3__title mt-35 text-center"><h3>MY Skills</h3></div>
+                <div class="skills mt-35 pd-bt-2">
+                    <div class="skills__left">
+                        <div class="skill__1 pd-bt">
+                            <div class="skill__1__title pd-80">
+                                <div class="title"><h4>Python</h4></div>
+                                <div class="percentage"><h4>80%</h4></div>
+                            </div>
+                            <div class="bar">
+                                <div class="bar__filler"></div>
+                            </div>
+                        </div>
+                        <div class="skill__2 pd-bt">
+                            <div class="skill__2__title pd-95">
+                                <div class="title"><h4>JavaScript</h4></div>
+                                <div class="percentage"><h4>95%</h4></div>
+                            </div>
+                            <div class="bar">
+                                <div class="bar__filler"></div>
+                            </div>
+                        </div>
+                        <div class="skill__3 pd-bt">
+                            <div class="skill__3__title pd-75">
+                                <div class="title"><h4>CSS</h4></div>
+                                <div class="percentage"><h4>75%</h4></div>
+                            </div>
+                            <div class="bar">
+                                <div class="bar__filler"></div>
+                            </div>
+                        </div>
+                        <div class="skill__4 pd-bt">
+                            <div class="skill__4__title pd-45">
+                                <div class="title"><h4>Node.js</h4></div>
+                                <div class="percentage"><h4>45%</h4></div>
+                            </div>
+                            <div class="bar">
+                                <div class="bar__filler"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skills__right">
+                        <div class="skill__1__right pd-bt">
+                            <div class="skill__1__title__right pd-65">
+                                <div class="title"><h4>C</h4></div>
+                                <div class="percentage"><h4>65%</h4></div>
+                            </div>
+                            <div class="bar">
+                                <div class="bar__filler"></div>
+                            </div>
+                        </div>
+                        <div class="skill__2__right pd-bt">
+                            <div class="skill__2__title__right pd-45">
+                                <div class="title"><h4>React</h4></div>
+                                <div class="percentage"><h4>45%</h4></div>
+                            </div>
+                            <div class="bar">
+                                <div class="bar__filler"></div>
+                            </div>
+                        </div>
+                        <div class="skill__3__right pd-bt">
+                            <div class="skill__3__title__right pd-15">
+                                <div class="title"><h4>Bash</h4></div>
+                                <div class="percentage"><h4>15%</h4></div>
+                            </div>
+                            <div class="bar">
+                                <div class="bar__filler"></div>
+                            </div>
+                        </div>
+                        <div class="skill__4__right pd-bt">
+                            <div class="skill__4__title__right pd-85">
+                                <div class="title"><h4>Flask</h4></div>
+                                <div class="percentage"><h4>85%</h4></div>
+                            </div>
+                            <div class="bar">
+                                <div class="bar__filler"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section__4">
+            <div class="footer inner-wrapper" id="contact">
+                <p>phone Number: 08068929515</p>
+                <p>email: loudsdata@gmail.com</p>
+
+
+            </div>
+
+        </section>
+    </div>
+    <script>
+    let collapse = ()=> {
+        var idName = document.getElementById("collapse");
+        var idName2 = document.getElementById("collapsible_links")
+        if (idName.className === "top_menu inner-wrapper" && idName2.className === "right_menu mr-0"){
+            idName.className += " responsive";
+            idName2.className += " responsive";
+        }
+        else{
+            idName.className = "top_menu inner-wrapper";
+            idName2.className = "right_menu mr-0";
+        }
+    }
+       
+    </script>
+</body>
+</html>
